@@ -1,6 +1,6 @@
-En Vogue-- Test Plan (V1)
+# En Vogue - Test Plan (V1)
 
-Version: V1 \| Owner: Robert Norwood \|
+## Version: V1 \| Owner: Robert Norwood \|
 
 ## 1.  Purpose
 
