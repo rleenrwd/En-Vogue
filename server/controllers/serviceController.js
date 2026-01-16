@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Service = require('../models/Service');
+const {createServiceSchema} = require('../validators/serviceValidator');
 
 exports.getServices = async (req, res) => {
     try {
@@ -14,7 +15,7 @@ exports.getServices = async (req, res) => {
     } catch (err) {
         console.error(err.stack);
         
-        res.status(500).json(
+        return res.status(500).json(
             {
                 success: false,
                 message: "Internal server error.",
@@ -58,8 +59,34 @@ exports.getServiceById = async (req, res) => {
     }
 }
 
-exports.createService = (req, res) => {
-    res.send('Admin only, service created');
+exports.createService = async (req, res) => {
+    // Validate the request body
+    const {error, value} = createServiceSchema.validate(req.body,{
+        abortEarly: false, // collects all validation errors (not just the first one)
+        stripUnknown: true // removes unexpected fields from input
+    });
+
+    if (error) {
+        return res.status(400).json({
+            success: false,
+            message: 'Invalid service data.'
+        });
+    }
+
+    try {
+        const createdService = await Service.create(value);
+
+        return res.status(201).json({
+            success: true,
+            data: createdService
+        })
+    } catch (err) {
+        console.error(err.stack);
+        return res.status(500).json({
+            success: false,
+            message: 'Internal server error.'
+        })
+    }
 }
 
 exports.updateService = (req, res) => {
