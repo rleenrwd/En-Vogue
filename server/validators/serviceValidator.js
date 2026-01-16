@@ -8,5 +8,12 @@ const createServiceSchema = Joi.object({
     durationMins: Joi.number().integer().min(1).required()
 });
 
+const updateServiceSchema = Joi.object({
+    name: Joi.string().trim(),
+    description: Joi.string().trim(),
+    image: Joi.string().uri(),
+    price: Joi.number().min(1),
+    durationMins: Joi.number().integer().min(1)
+}).min(1); //requires at least one field to be updated in order to save
 
-module.exports = {createServiceSchema};
+module.exports = {createServiceSchema, updateServiceSchema};
