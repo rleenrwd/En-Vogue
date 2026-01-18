@@ -60,10 +60,10 @@ exports.getServiceById = async (req, res) => {
 }
 
 exports.createService = async (req, res) => {
-    // Validate the request body
+    
     const {error, value} = createServiceSchema.validate(req.body,{
-        abortEarly: false, // collects all validation errors (not just the first one)
-        stripUnknown: true // removes unexpected fields from input
+        abortEarly: false, 
+        stripUnknown: true 
     });
 
     if (error) {

@@ -1,8 +1,9 @@
 const Joi = require('joi');
+const { createBooking } = require('../controllers/bookingController');
 
 const objectId = Joi.string().hex().length(24); // mongoDB ObjectId is 24 hex chars, this matches that.
 
-const bookingCreateSchema = Joi.object({
+const createBookingSchema = Joi.object({
     serviceId: objectId.required().messages({
         'any.required': 'Service is required.', 
         'string.length': 'Service must be a valid id.',
@@ -49,4 +50,4 @@ const bookingCreateSchema = Joi.object({
 
 });
 
-module.exports = {bookingCreateSchema};
+module.exports = {createBookingSchema};
