@@ -2,6 +2,7 @@ const AdminUser = require('../models/AdminUser');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const {JWT_SECRET, JWT_EXPIRES_IN, cookieOptions} = require('../config/auth');
+const requireAuth = require('../middleware/requireAuth');
 
 exports.loginAdmin = async (req, res) => {
     try {
@@ -78,4 +79,13 @@ exports.logoutAdmin = (req, res) => {
         success: true,
         message: 'Logged out successfully.'
     });
+}
+
+exports.getMe =  (req, res) => {
+    const {id, role} = req.user;
+
+    return res.status(200).json({
+        success: true,
+        data: {id, role}
+    })
 }
