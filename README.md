@@ -174,6 +174,7 @@ Example response:
 ## Author
 
 **Robert L. Norwood**
+
 Software Engineering Student | Freelance Full-Stack Developer
 
 ---
