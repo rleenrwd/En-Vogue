@@ -5,10 +5,14 @@ const {sendSms} = require('../services/smsService');
 const {buildBookingConfirmationSms} = require('../utils/smsTemplates');
 
 exports.createBooking = async (req, res) => {
+ 
+    console.log('req.body contents: ', req.body);
     const {error, value} = createBookingSchema.validate(req.body, {
         abortEarly: true,
         stripUnknown: true
     });
+
+    console.log('validated req.body:', value);
 
     if (error) {
         return res.status(400).json({
@@ -36,7 +40,8 @@ exports.createBooking = async (req, res) => {
             customerName,
             phone,
             email,
-            notes
+            notes,
+            status: 'Confirmed'
         });
         
         const smsBody = buildBookingConfirmationSms({
@@ -45,6 +50,8 @@ exports.createBooking = async (req, res) => {
             date,
             time
         });
+
+        console.log('SMS payload about to be sent:', {to: phone, body: smsBody});
 
         try {
             await sendSms({to: phone, body: smsBody});

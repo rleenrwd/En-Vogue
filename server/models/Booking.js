@@ -42,7 +42,7 @@ const bookingSchema = new Schema({
     },
     status: {
         type: String,
-        enum: ['Confirmed', 'Cancelled'],
+        enum: ['Pending','Confirmed', 'Cancelled'],
         default: 'Pending',
     },
     smsStatus: {
