@@ -49,4 +49,20 @@ const createBookingSchema = Joi.object({
 
 });
 
-module.exports = {createBookingSchema};
+const availabilityQuerySchema = Joi.object({
+  date: Joi.string()
+    .pattern(/^\d{4}-\d{2}-\d{2}$/)
+    .required()
+    .messages({
+      'any.required': 'Date is required.',
+      'string.pattern.base': 'Date must be in YYYY-MM-DD format.',
+    }),
+
+  serviceId: objectId.required().messages({
+    'any.required': 'serviceId is required.',
+    'string.length': 'serviceId must be a valid id.',
+    'string.hex': 'serviceId must be a valid id.',
+  }),
+});
+
+module.exports = {createBookingSchema, availabilityQuerySchema};
