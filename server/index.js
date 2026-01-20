@@ -13,6 +13,7 @@ const PORT = process.env.PORT || 5000;
 const connectDb = require('./database/db');
 const serviceRoutes = require('./routes/serviceRoutes');
 const authRoutes = require('./routes/authRoutes');
+const bookingRoutes = require('./routes/bookingRoutes');
 
 connectDb();
 
@@ -23,6 +24,7 @@ app.use(cookieParser());
 
 app.use('/api/services', serviceRoutes);
 app.use('/api/auth', authRoutes);
+app.use('/api/bookings', bookingRoutes);
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
