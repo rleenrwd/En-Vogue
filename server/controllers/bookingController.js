@@ -199,3 +199,25 @@ exports.getAvailability = async (req, res) => {
     }
 
 }
+
+exports.getBookings = async (req, res) => {
+
+    try {
+        const bookings = await Booking.find()
+        .populate('serviceId', 'name durationMins') // Gets related service doc (with the serviceId), with just the name and durationMins field
+        .sort({date: 1, time: 1})
+        .lean();
+
+        return res.status(200).json({
+            success: true,
+            data: bookings,
+        });
+
+    } catch (err) {
+        console.error(err);
+        return res.status(500).json({
+            success: false,
+            message: 'Internal Server Error.'
+        });
+    }
+}
