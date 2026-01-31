@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Booking = require('../models/Booking');
 const Service = require('../models/Service');
 const {createBookingSchema, availabilityQuerySchema} = require('../validators/bookingValidator');
-const {sendSms} = require('../services/smsService');
+const {sendBookingConfirmationSms} = require('../services/smsService');
 const {buildBookingConfirmationSms} = require('../utils/smsTemplates');
 const {parseTimeToMinutes, minutesToTime, generateAvailStartTimes} = require('../utils/time');
 
@@ -43,7 +43,7 @@ exports.createBooking = async (req, res) => {
             status: 'Confirmed'
         });
         
-        const smsBody = buildBookingConfirmationSms({
+        const smsConfirmation = buildBookingConfirmationSms({
             customerName,
             serviceName: service.name,
             date,
@@ -51,12 +51,12 @@ exports.createBooking = async (req, res) => {
         });
 
         if (process.env.NODE_ENV !== 'production') {
-            console.log('SMS payload about to be sent:', {to: phone, body: smsBody});
+            console.log('SMS payload about to be sent:', {to: phone, body: smsConfirmation});
         }
         
 
         try {
-            await sendSms({to: phone, body: smsBody});
+            await sendBookingConfirmationSms({to: phone, body: smsConfirmation});
 
             await Booking.findByIdAndUpdate(booking._id, {
                 smsStatus: 'Sent',
@@ -220,4 +220,8 @@ exports.getBookings = async (req, res) => {
             message: 'Internal Server Error.'
         });
     }
+}
+
+exports.adminCreateBooking = async (req, res) => {
+    // const {error, value} = 
 }

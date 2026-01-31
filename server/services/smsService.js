@@ -11,7 +11,7 @@ const hasCreds = Boolean(TWILIO_ACCOUNT_SID && TWILIO_AUTH_TOKEN);
 
 const client = hasCreds ? twilio(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN): null;
 
-const sendSms = async ({to, body}) => {
+const sendBookingConfirmationSms = async ({to, body}) => {
     if (!client) throw new Error('Twilio client not configured (missing SID/Auth Token).');
     if (!to) throw new Error('Missing "to" phone number.');
     if (!body) throw new Error('Missing SMS body.');
@@ -35,4 +35,4 @@ const sendSms = async ({to, body}) => {
     }
 }
 
-module.exports = {sendSms};
+module.exports = {sendBookingConfirmationSms};
