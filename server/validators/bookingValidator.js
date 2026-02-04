@@ -28,7 +28,7 @@ const createBookingSchema = Joi.object({
 
     customerName: Joi.string().min(2).max(80).required().messages({
         'any.required': 'Customer name is required.',
-        'string.min': 'Customer name must be at least 2 characters long.',
+        'string.min': 'Customer name must be at least 2 characters.',
         'string.max': 'Customer name must be 80 characters or less.'
     }),
 
