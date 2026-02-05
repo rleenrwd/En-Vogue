@@ -63,7 +63,7 @@ exports.loginAdmin = async (req, res) => {
         });
 
     } catch (err) {
-        console.error(err.stack);
+        console.error(err);
         return res.status(500).json({
             success: false,
             message: 'Internal server error.'

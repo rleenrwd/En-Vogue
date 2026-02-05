@@ -13,7 +13,7 @@ exports.getServices = async (req, res) => {
             }
         );
     } catch (err) {
-        console.error(err.stack);
+        console.error(err);
         
         return res.status(500).json(
             {
@@ -51,7 +51,7 @@ exports.getServiceById = async (req, res) => {
         });
 
     } catch (err) {
-        console.error(err.stack);
+        console.error(err);
         return res.status(500).json({
             success: false,
             message: 'Internal server error.'
@@ -81,7 +81,7 @@ exports.createService = async (req, res) => {
             data: createdService
         })
     } catch (err) {
-        console.error(err.stack);
+        console.error(err);
         return res.status(500).json({
             success: false,
             message: 'Internal server error.'
@@ -130,7 +130,7 @@ exports.updateService = async (req, res) => {
             data: updatedService
         });
     } catch (err) {
-        console.error(err.stack);
+        console.error(err);
         return res.status(500).json({
             success: false,
             message: 'Internal server error.'
@@ -167,7 +167,7 @@ exports.deleteService = async (req, res) => {
             data: deletedService
         });
     } catch (err) {
-            console.error(err.stack);
+            console.error(err);
             return res.status(500).json({
                 success: false,
                 message: 'Internal server error.'
