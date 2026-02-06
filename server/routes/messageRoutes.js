@@ -8,7 +8,7 @@ router.post('/', messageController.createMessage);
 
 // Admin
 router.get('/admin', [requireAuth, adminOnly], messageController.adminGetAllMessages);
-
+router.delete('/admin/:id', [requireAuth, adminOnly], messageController.adminDeleteMessage);
 
 
 
