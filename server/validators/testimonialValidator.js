@@ -14,6 +14,11 @@ const createTestimonialSchema = Joi.object({
 
 });
 
+const updateTestimonialSchema = Joi.object({
+    name: Joi.string().min(2).max(50).trim(),
+    message: Joi.string().min(10).max(500).trim()
+}).min(1).messages({'object.min': 'At least one field must be provided to update.'});
 
-module.exports = {createTestimonialSchema};
+
+module.exports = {createTestimonialSchema, updateTestimonialSchema};
 
