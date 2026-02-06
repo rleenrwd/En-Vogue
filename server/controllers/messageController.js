@@ -40,5 +40,20 @@ exports.createMessage = async (req, res) => {
 }
 
 exports.adminGetAllMessages = async (req, res) => {
-    console.log('this is coming next');
+
+    try {
+        const messages = await Message.find().sort({createdAt: -1}).lean();
+
+        return res.status(200).json({
+            success: true,
+            data: messages
+        });
+        
+    } catch (err) {
+        console.error(err);
+        return res.status(500).json({
+            success: false,
+            message: 'Internal server error.'
+        });
+    }
 }

@@ -7,5 +7,11 @@ const requireAuth = require('../middleware/requireAuth');
 router.post('/', messageController.createMessage);
 
 // Admin
+router.get('/admin', [requireAuth, adminOnly], messageController.adminGetAllMessages);
+
+
+
+
+
 
 module.exports = router;
