@@ -55,8 +55,6 @@ Validation Testing (client-side + server-side)
 Security Smoke Testing (auth required, cookie behavior, unauthorized
 access)
 
-Regression Smoke Tests before demos/interview
-
 ## 6.  Test Environment
 
 Local development environment (Windows)

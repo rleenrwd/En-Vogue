@@ -82,13 +82,11 @@ malformed or malicious data from being processed
 
 Sensitive configuration values managed through environment variables
 
-Additional production-level security measures may be implemented if the
-application is deployed.
+Additional production-level security measures may be implemented after deployment, if needed.
 
 ## 6.  Constraints
 
-The project is developed within a limited timeframe and prioritizes core
-functionality.
+The project prioritizes core functionality for v1.
 
 Development and testing are performed in a local environment.
 
@@ -111,5 +109,4 @@ and messages through the admin dashboard.
 The project demonstrates a structured SDLC approach with supporting
 documentation and test artifacts.
 
-The system's evolution from an existing Wix implementation can be
-clearly explained in an interview setting.
+The system's evolution from an existing Wix implementation satifies the client expectations.
