@@ -71,3 +71,48 @@ exports.adminCreateTestimonial = async (req, res) => {
         });
     }
 }
+exports.adminUpdateTestimonial = async (req, res) => {
+
+    const {id} = req.params;
+
+ 
+    const {error, value} = updateTestimonialSchema.validate(req.body, {
+        abortEarly: true,
+        stripUnknown: true
+    });
+
+
+    if (error) {
+        return res.status(400).json({
+            success: false,
+            message: error.details[0].message
+        });
+    }
+
+    try {
+
+        const updatedTestimonial = await Testimonial.findByIdAndUpdate(id,
+            value,
+            {new: true, runValidators: true}
+        ).lean();
+
+        if (!updatedTestimonial) {
+            return res.status(404).json({
+                success: false,
+                message: 'No testimonial found.'
+            });
+        }
+
+        return res.status(200).json({
+            success: true,
+            data: updatedTestimonial
+        });
+
+    } catch (err) {
+        console.error(err);
+        return res.status(500).json({
+            success: false,
+            message: 'Internal server error.'
+        });
+    }
+}
