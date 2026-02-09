@@ -12,11 +12,7 @@ and customer requests.
 
 ## 2.  What problem are we solving?
 
-This project is a custom web application inspired by an existing pet
-grooming website that I previously built using Wix for a real client.
-The goal is to recreate and improve that site as a custom-built
-application that can potentially replace the Wix version if the client
-chooses. The client expressed concerns with Wix's ongoing costs.
+This project is a custom web application inspired by an existing pet grooming website that I previously built using Wix for a real client. The goal is to recreate and improve that site as a custom-built application that can replace the Wix version when done. The client expressed concerns with Wix’s limitations and wants more control over the site.
 
 By rebuilding the site using a full-stack approach, the project provides
 greater flexibility, maintainability, and control over features such as

@@ -9,11 +9,7 @@ Version 1 of the En Vogue application.
 
 ## 2.  Project Summary
 
-En Vogue is a custom full‑stack web application inspired by a Wix site
-originally built by Robert Norwood (me) for a real client. V1 supports
-public browsing of services, booking auto‑confirmed appointments with
-SMS confirmation, submitting contact messages, viewing testimonials, and
-admin management of services, bookings, testimonials, and messages.
+En Vogue Grooming is a full-stack web application built as a custom replacement for a real pet grooming website that I originally created for a client using Wix. V1 supports public browsing of services, booking auto‑confirmed appointments with SMS confirmation, submitting contact messages, viewing testimonials, and admin management of services, bookings, testimonials, and messages.
 
 ## 3.  Test Objectives
 
