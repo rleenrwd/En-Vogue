@@ -9,7 +9,7 @@ router.get('/', testimonialController.getTestimonials);
 // admin
 router.get('/admin', [requireAuth, adminOnly], testimonialController.adminGetTestimonials);
 router.post('/admin', [requireAuth, adminOnly], testimonialController.adminCreateTestimonial);
-
+router.put('/admin/:id', [requireAuth, adminOnly], testimonialController.adminUpdateTestimonial);
 
 
 
