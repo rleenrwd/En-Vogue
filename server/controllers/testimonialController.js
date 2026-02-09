@@ -116,3 +116,28 @@ exports.adminUpdateTestimonial = async (req, res) => {
         });
     }
 }
+exports.adminDeleteTestimonial = async (req, res) => {
+    const {id} = req.params;
+
+    try {
+        const deletedTestimonial = await Testimonial.findByIdAndDelete(id);
+
+        if (!deletedTestimonial) {
+            return res.status(404).json({
+                success: false,
+                message: 'Testimonial not found.'
+            });
+        }
+
+        return res.status(200).json({
+            success: true,
+            data: deletedTestimonial
+        });
+    } catch (err) {
+        console.error(err);
+        return res.status(500).json({
+            success: false,
+            message: 'Internal server error.'
+        });
+    }
+}

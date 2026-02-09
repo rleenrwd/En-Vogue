@@ -116,7 +116,7 @@ exports.updateService = async (req, res) => {
             id,
             value,
             {new: true, runValidators: true}
-        );
+        ).lean();
 
         if (!updatedService) {
             return res.status(404).json({
