@@ -94,7 +94,7 @@ exports.adminUpdateTestimonial = async (req, res) => {
         const updatedTestimonial = await Testimonial.findByIdAndUpdate(id,
             value,
             {new: true, runValidators: true}
-        ).lean();
+        );
 
         if (!updatedTestimonial) {
             return res.status(404).json({

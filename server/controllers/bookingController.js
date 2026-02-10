@@ -354,7 +354,7 @@ exports.adminUpdateBooking = async (req, res) => {
             notes,
             status: 'Confirmed'
         }, 
-        {new: true}).lean();
+        {new: true});
 
         return res.status(200).json({
             success: true,
