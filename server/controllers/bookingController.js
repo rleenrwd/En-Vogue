@@ -380,20 +380,18 @@ exports.adminDeleteBooking = async (req, res) => {
     const {id} = req.params;
 
     try {
-        const booking = await Booking.findById(id).lean();
+        const deletedBooking = await Booking.findByIdAndDelete(id);
 
-        if(!booking) {
+        if(!deletedBooking) {
             return res.status(404).json({
                 success: false,
                 message: 'Booking not found.'
             });
         }
 
-        await Booking.findByIdAndDelete(id);
-
         return res.status(200).json({
             success: true,
-            message: 'Booking deleted.'
+            data: deletedBooking
         });
 
     } catch (err) {

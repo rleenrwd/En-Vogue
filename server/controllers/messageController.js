@@ -62,9 +62,9 @@ exports.adminDeleteMessage = async (req, res) => {
     const {id} = req.params;
 
     try {
-        const message = await Message.findByIdAndDelete(id);
+        const deletedMessage = await Message.findByIdAndDelete(id);
 
-        if (!message) {
+        if (!deletedMessage) {
             return res.status(404).json({
                 success: false,
                 message: 'Message not found.'
@@ -73,7 +73,7 @@ exports.adminDeleteMessage = async (req, res) => {
 
         return res.status(200).json({
             success: true,
-            message: 'Message successfully deleted.'
+            data: deletedMessage
         });
     } catch (err) {
         console.error(err);
