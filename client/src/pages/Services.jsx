@@ -28,7 +28,7 @@ export default function Services() {
 
     return (
         <>
-            <h2>Services</h2>
+            <h2>Our Signature Services</h2>
             {services.length === 0 ? (
                 <p>No services found.</p>
             ) : (
