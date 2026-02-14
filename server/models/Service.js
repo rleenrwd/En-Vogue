@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 const serviceSchema = new Schema(
     {
     name: {type: String, minlength: 2, maxlength: 80, trim: true, required: true},
+    subtitle: {type: String, minlength: 2, maxlength: 200, trim: true, required: true},
     description: {type: String, minlength: 10, maxlength: 1000, trim: true, required: true},
     image: {type: String, required: true},
     price: {type: Number, required: true},

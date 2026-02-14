@@ -6,6 +6,11 @@ const createServiceSchema = Joi.object({
         'string.min': 'Name must be at least 2 characters.',
         'string.max': 'Name must be 80 characters or less.'
     }),
+    subtitle: Joi.string().min(2).max(200).trim().required().messages({
+        'any.required': 'A subtitle is required.',
+        'string.min': 'Subtitle must be at least 2 characters.',
+        'string.max': 'Subtitle must be 200 characters or less.'
+    }),
     description: Joi.string().min(10).max(1000).trim().required().messages({
         'any.required': 'A description is required.',
         'string.min': 'Description must be at least 10 characters.',
@@ -30,6 +35,7 @@ const createServiceSchema = Joi.object({
 
 const updateServiceSchema = Joi.object({
     name: Joi.string().min(2).max(80).trim(),
+    subtitle: Joi.string().min(2).max(200).trim(),
     description: Joi.string().min(10).max(1000).trim(),
     image: Joi.string().uri(),
     price: Joi.number().min(1),

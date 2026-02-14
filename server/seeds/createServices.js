@@ -7,6 +7,7 @@ const Service = require('../models/Service');
 const seedServices = [
     {
     name: 'The En Vogue Finish',
+    subtitle: 'Test subtitle',
     description:
       'Our most refined grooming experience. Includes bath, deep-conditioning, precision coat styling or breed-specific cut, paw/pad care, ear cleansing, and finishing spritz.',
     image: 'https://images.pexels.com/photos/6816860/pexels-photo-6816860.jpeg',
@@ -15,6 +16,7 @@ const seedServices = [
     },
     {
     name: 'The Luxe Lather',
+    subtitle: 'Test subtitle',
     description:
       'Professional bathing service with gentle shampoos and nourishing conditioners for a soft, fresh coat and spa-like finish.',
     image:
@@ -24,6 +26,7 @@ const seedServices = [
   },
   {
     name: 'Reluxe and Play',
+    subtitle: 'Test subtitle',
     description: 'Professional daycare services.',
     image: 'https://images.unsplash.com/photo-1581888227599-779811939961?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     price: 100,
