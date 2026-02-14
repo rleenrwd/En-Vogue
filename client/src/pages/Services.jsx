@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import api from "../api/axios";
+import { getServices } from "../api/services";
 import ServiceCard from "../components/services/ServiceCard";
 
 export default function Services() {
@@ -10,8 +10,8 @@ export default function Services() {
     useEffect(() => {
         async function loadServices() {
             try {
-                const res = await api.get("/services");
-                setServices(res.data?.data ?? []);
+                const data = await getServices();
+                setServices(data);
             } catch (err) {
                 const message = err?.response?.data?.message ?? "Failed to load services";
                 setError(message);
