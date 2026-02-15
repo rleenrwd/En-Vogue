@@ -1,14 +1,17 @@
 .pageBanner {
-    background-color: black;
-    color: white;
-    font-family: 'EB Garamond';
+    background-color: var(--banner-bg);
+    font-family: var(--header-fonts);
 }
 
 .pageBanner p {
-    font-size: 1.2rem;
+    color: var(--banner-text);
+    font-size: 1rem;
     margin-bottom: -5px;
+    line-height: 1.3;
 }
 
 .pageBanner small {
-    color: #dfaf37;
+    font-size: .7rem;
+    color: var(--accent-color);
 }
+
