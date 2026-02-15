@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,9 +7,16 @@
 
 :root {
     --font-heading: "EB Garamond", Garamond, Baskerville, "Times New Roman", serif;
+    --navbar-bg: whitesmoke;
     --accent-color: #dfaf37;
     --banner-bg: #000;
     --banner-text: #f5f5f5;
+    --button-bg: #000;
+    --button-hover-bg: #161616;
+    --button-text: "EB Garamond", serif;
+    --button-text-weight: 400;
+    --button-text-size: 15px;
+    --navbar-link-text: "EB Garamond", serif;
 }
 
 body {

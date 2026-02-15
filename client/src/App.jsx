@@ -5,7 +5,6 @@ function App() {
   return (
     <main>
       <Navbar />
-      <h1>En Vogue Grooming App</h1>
       <Services />
     </main>
   );

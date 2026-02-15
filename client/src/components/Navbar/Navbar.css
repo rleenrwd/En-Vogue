@@ -1,0 +1,52 @@
+#main-navbar {
+    background-color: var(--navbar-bg);
+    /* background-color: white; */
+}
+
+#brand-logo {
+    height: 150px;
+    width: auto;
+    margin-left: 10px;
+}
+
+
+@media (min-width: 992px) {
+    .navbar .navbar-collapse {
+        position: relative;
+    }
+
+    .navbar .navbar-nav.mx-auto {
+        position: absolute;
+        right: 50%;
+        transform: translateX(14%);
+        gap: 1.25rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1.1rem;
+        font-weight: 500;
+        font-family: var(--navbar-link-text);
+        letter-spacing: .2px;
+    }
+
+    .main-navbar-button {
+        margin-right: 20px;
+        background-color: var(--button-bg);
+        color: var(--accent-color);
+        border-radius: 5px;
+        padding: 8px 35px;
+        letter-spacing: 0.5px;
+        font-family: var(--button-text);
+        font-weight: var(--button-text-weight);
+        font-size: var(--button-text-size);
+        text-transform: uppercase;
+    }
+
+    .main-navbar-button:hover {
+        background-color: var(--button-hover-bg);
+        cursor: pointer;
+    }
+}
+
+
+
