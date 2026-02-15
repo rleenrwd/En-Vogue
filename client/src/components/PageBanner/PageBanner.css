@@ -1,0 +1,14 @@
+.pageBanner {
+    background-color: black;
+    color: white;
+    font-family: 'EB Garamond';
+}
+
+.pageBanner p {
+    font-size: 1.2rem;
+    margin-bottom: -5px;
+}
+
+.pageBanner small {
+    color: #dfaf37;
+}

@@ -1,11 +1,13 @@
 import Services from "./pages/Services";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (
-    <div>
+    <main>
+      <Navbar />
       <h1>En Vogue Grooming App</h1>
       <Services />
-    </div>
+    </main>
   );
 }
 
