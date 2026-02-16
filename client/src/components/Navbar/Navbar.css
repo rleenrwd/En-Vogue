@@ -1,111 +1,26 @@
-
-#main-navbar {
-  background-color: var(--navbar-bg);
+#brand-logo {
+  height: 110px;
+  width: auto;
 }
 
+/* .main-navbar {
+  background-color: var(--navbar-bg);
+} */
+
 .navbar-nav .nav-link {
-  font-size: 1rem;
-  font-weight: 500;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid darkgray;
+  padding-left: 5px;
+  padding-bottom: 15px;
+  color: black;
   font-family: var(--navbar-link-text);
-  letter-spacing: 0.2px;
-  padding: 10px 0;
-  color: inherit;
-  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:last-child {
+  margin-bottom: 10px;
 }
 
 .navbar-nav .nav-link:active {
-  background-color: #d2cfcf;
-}
-
-
-#main-navbar-button {
-  background-color: var(--button-bg);
-  color: var(--accent-color);
-  border-radius: 5px;
-  padding: 10px 0;
-  letter-spacing: 0.5px;
-  font-family: var(--button-text);
-  font-weight: var(--button-text-weight);
-  font-size: var(--button-text-sm-screen);
-  text-transform: uppercase;
-  border: none;
-}
-
-@media (max-width: 991px) {
-  #brand-logo {
-    height: 85px;
-    width: auto;
-    max-width: 170px;
-    object-fit: contain;
-  }
-
-  .mobile-header {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    width: 100%;
-    column-gap: 12px;
-  }
-
-  .mobile-left {
-    justify-self: start;
-  }
-
-  .mobile-center {
-    justify-self: center;
-    min-width: 0;
-  }
-
-  .mobile-right {
-    justify-self: end;
-  }
-
-  #envelope-sm {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .navbar-nav .nav-item:nth-child(5) {
-    margin-bottom: 20px;
-  }
-
-
-  #main-navbar-button {
-    width: 100%;
-    margin-bottom: 5px;
-  }
-}
-
-
-@media (min-width: 992px) {
-  #brand-logo {
-    height: 150px;
-    width: auto;
-    margin-left: 15px;
-  }
-
-  .navbar-nav .nav-link {
-    border-bottom: none;
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding: 0;
-  }
-
-  .navbar-nav .nav-link:active {
-    background: none;
-  }
-
-  #main-navbar-button {
-    margin-top: 0;
-    margin-right: 20px;
-    margin-left: 20px;
-    padding: 10px 30px;
-    font-size: var(--button-text-lg-screen);
-  }
-
-  #main-navbar-button:hover {
-    background-color: var(--button-hover-bg);
-    cursor: pointer;
-  }
+  background-color: whitesmoke;
 }
