@@ -57,6 +57,7 @@
   width: 80%;
   padding: 10px;
   border-radius: 5px;
+  text-transform: uppercase;
 }
 
 .nav-booknow-btn:hover {
@@ -87,5 +88,19 @@
   }
   .navbar-nav .nav-link-container:active {
   background: none;
+  }
 }
+
+@media (min-width: 992px) {
+  #brand-logo {
+    height: 105px;
+  }
+  .navbar-nav .nav-link {
+    margin-left: 10px;
+    font-size: 1.1rem;
+  }
+    .nav-booknow-btn {
+    width: 175px;
+    letter-spacing: .5px;
+  }
 }
