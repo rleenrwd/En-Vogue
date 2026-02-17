@@ -1,9 +1,11 @@
+/************************** BASE STYLES **************************/
 .pageBanner {
     background-color: var(--banner-bg);
     font-family: var(--font-heading);
     padding-bottom: 8px;
 }
 
+/************ TEXT STYLES ************/
 .pageBanner p {
     color: var(--banner-text);
     font-size: .85rem;
@@ -17,6 +19,9 @@
     color: var(--accent-color);
 }
 
+/************************** MEDIA QUERIES **************************/
+
+/************ SMALL SCREENS ************/
 @media (min-width: 576px) {
     .pageBanner p {
         font-size: .9rem;
@@ -26,6 +31,7 @@
     }
 }
 
+/************ MEDIUM+ SCREENS ************/
 @media (min-width: 768px) {
     .pageBanner p {
         font-size: 1rem;

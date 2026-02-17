@@ -1,16 +1,16 @@
-/* .main-navbar {
-  background-color: var(--navbar-bg);
-} */
+/************************** BASE STYLES (MOBILE) **************************/
 
+/************ NAV HEADER (MOBILE) ************/
 .nav-envelope {
   text-decoration: none;
   color: inherit;
 }
+
 #brand-logo {
   height: 125px;
   width: auto;
 }
-
+/************ NAV LINKS (MOBILE) ************/
 .navbar-nav .nav-link {
   padding-left: 12px;
   padding-bottom: 15px;
@@ -33,6 +33,12 @@
   background-color: whitesmoke !important;
 }
 
+.navbar-nav a.nav-link.nav-link-container{
+  border-bottom: var(--border-bottom);
+  text-decoration: none;
+}
+
+/************ NAV BUTTON (MOBILE) ************/
 .nav-btn-container {
   display: flex;
   justify-content: center;
@@ -55,7 +61,5 @@
   background-color: rgb(26, 26, 26);
 }
 
-.navbar-nav a.nav-link.nav-link-container{
-  border-bottom: var(--border-bottom);
-  text-decoration: none;
-}
+
+/************************** MEDIA QUERIES **************************/
