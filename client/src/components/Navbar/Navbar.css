@@ -1,6 +1,9 @@
 /************************** BASE STYLES (MOBILE) **************************/
 
 /************ NAV HEADER (MOBILE) ************/
+/* nav {
+  background-color: var(--navbar-bg);
+} */
 .nav-envelope {
   text-decoration: none;
   color: inherit;
@@ -21,7 +24,7 @@
 }
 
 .nav-first-child {
-  margin-top: 5px;
+  margin-top: 20px;
   border-top: 2px solid rgba(0,0,0,0.08) !important;
 }
 
@@ -63,3 +66,26 @@
 
 
 /************************** MEDIA QUERIES **************************/
+
+/************ MEDIUM SCREENS ************/
+@media (min-width: 768px) {
+  .navbar {
+    padding: 0px !important;
+    border-bottom: 2px solid rgba(0,0,0,0.08) !important;
+    /* border-bottom: 1px solid rgba(223, 175, 55, 0.35) !important; */
+  }
+  #brand-logo {
+    height: 95px;
+    margin-right: 10px;
+  }
+  .navbar-nav .nav-link {
+    padding-bottom: 8px;
+  }
+  .nav-booknow-btn {
+    width: 150px;
+    font-size: var(--button-text-lg-screen);
+  }
+  .navbar-nav .nav-link-container:active {
+  background: none;
+}
+}

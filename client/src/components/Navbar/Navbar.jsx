@@ -12,13 +12,13 @@ export default function Navbar() {
 
             <div className="container-fluid px-0">
                 <nav className="navbar navbar-expand-md main-navbar sticky-top">
-                    <div className="container-fluid px-0">
+                    <div className="container-fluid px-0 px-md-4">
 
                     {/* MOBILE LAYOUT */}
                     {isMobile ? (
                         <>
                             <div className="container-fluid text-center">
-                                <div className="row align-items-center">
+                                <div className="row pt-2 align-items-center">
                                     <div className="col-3">
                                         <a href="#" className='nav-envelope'>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" className="bi bi-envelope" viewBox="0 0 16 16">
@@ -103,7 +103,7 @@ export default function Navbar() {
                             </button>
 
                             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                                <div className="navbar-nav me-auto">
+                                <div className="navbar-nav me-auto gap-3">
                                     <a className="nav-link" aria-current="page" href="#">Home</a>
                                     <a className="nav-link" href="#">About </a>
                                     <a className="nav-link" href="#">Services</a>
