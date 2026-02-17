@@ -1,11 +1,11 @@
 import Services from "./pages/Services";
-import Navbar from "./components/navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <main>
       <Navbar />
-      <Services />
+      {/* <Services /> */}
     </main>
   );
 }
