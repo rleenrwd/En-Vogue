@@ -4,6 +4,8 @@
 > built as a custom replacement for an existing client website and is
 > planned for production deployment.
 
+> **UI previews of completed sections are shown below**
+
 ------------------------------------------------------------------------
 
 ## Overview
@@ -26,6 +28,21 @@ and production-minded backend architecture.
 This system is being developed based on direct client requirements and
 is intended to replace the existing Wix implementation as the business's
 primary website and operational platform.
+
+------------------------------------------------------------------------
+
+## UI Preview (Screenshots | Work in Progress)
+
+This project is actively being developed. Below are previews of completed
+UI sections from V1.
+
+### Mobile Navigation
+
+-   ![Mobile Navbar](docs/screenshots/navbar/mobile_navbar.png)
+
+### Mobile Menu
+
+-   ![Mobile Navbar Expanded](docs/screenshots/navbar/expanded_mobile_navbar.png)
 
 ------------------------------------------------------------------------
 
