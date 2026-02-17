@@ -1,32 +1,35 @@
+
 #brand-logo {
   height: 120px;
   width: auto;
 }
+
+
 
 /* .main-navbar {
   background-color: var(--navbar-bg);
 } */
 
 .navbar-nav .nav-link {
-  border-bottom: 1px solid rgba(0,0,0,0.08);
-  padding-left: 5px;
+  padding-left: 12px;
   padding-bottom: 15px;
   color: black;
   font-family: var(--navbar-link-text);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 500;
 }
 
-.navbar-nav .nav-link:last-child {
-  margin-bottom: 15px;
-}
-
-.navbar-nav .nav-link:nth-child(1) {
+.nav-first-child {
   margin-top: 5px;
+  border-top: 2px solid rgba(0,0,0,0.08) !important;
 }
 
-.navbar-nav .nav-link:active {
-  background-color: whitesmoke;
+.nav-last-child {
+  margin-bottom: 25px;
+}
+
+.navbar-nav .nav-link-container:active {
+  background-color: whitesmoke !important;
 }
 
 .nav-btn-container {
@@ -49,4 +52,9 @@
 .nav-booknow-btn:hover {
   cursor: pointer;
   background-color: rgb(26, 26, 26);
+}
+
+.navbar-nav a.nav-link.nav-link-container{
+  border-bottom: var(--border-bottom);
+  text-decoration: none;
 }

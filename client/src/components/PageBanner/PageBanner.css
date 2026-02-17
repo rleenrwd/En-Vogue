@@ -6,7 +6,7 @@
 
 .pageBanner p {
     color: var(--banner-text);
-    font-size: .9rem;
+    font-size: .85rem;
     margin-top: 3px;
     margin-bottom: -3px;
     line-height: 1.3;
@@ -19,7 +19,7 @@
 
 @media (min-width: 576px) {
     .pageBanner p {
-        font-size: 1rem;
+        font-size: .9rem;
     }
     .pageBanner small {
         font-size: .8rem;
@@ -28,7 +28,7 @@
 
 @media (min-width: 768px) {
     .pageBanner p {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .pageBanner small {
         font-size: .85rem;

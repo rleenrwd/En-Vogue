@@ -16,8 +16,9 @@
     --button-text: "EB Garamond", serif;
     --button-text-weight: 400;
     --button-text-lg-screen: 1rem;
-    --button-text-sm-screen: 1.1rem;
+    --button-text-sm-screen: 1.05rem;
     --navbar-link-text: "EB Garamond", serif;
+    --border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
 body {
