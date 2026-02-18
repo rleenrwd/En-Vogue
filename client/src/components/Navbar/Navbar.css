@@ -1,9 +1,7 @@
 /************************** BASE STYLES (MOBILE) **************************/
 
 /************ NAV HEADER (MOBILE) ************/
-/* nav {
-  background-color: var(--navbar-bg);
-} */
+
 .nav-envelope {
   text-decoration: none;
   color: inherit;
@@ -56,7 +54,7 @@
   border: none;
   width: 80%;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   text-transform: uppercase;
 }
 
@@ -72,18 +70,19 @@
 @media (min-width: 768px) {
   .navbar {
     padding: 0px !important;
-    border-bottom: 2px solid rgba(0,0,0,0.08) !important;
-    /* border-bottom: 1px solid rgba(223, 175, 55, 0.35) !important; */
+    box-shadow: 0 3px 12px rgba(0,0,0,0.22);
   }
   #brand-logo {
     height: 95px;
-    margin-right: 10px;
+    margin-right: 5px;
   }
   .navbar-nav .nav-link {
     padding-bottom: 8px;
+    margin-left: -10px;
   }
   .nav-booknow-btn {
-    width: 150px;
+    width: 120px;
+    border-radius: 10px;
     font-size: var(--button-text-lg-screen);
   }
   .navbar-nav .nav-link-container:active {
@@ -91,16 +90,29 @@
   }
 }
 
+/************ LARGE SCREENS ************/
 @media (min-width: 992px) {
   #brand-logo {
     height: 105px;
   }
   .navbar-nav .nav-link {
     margin-left: 10px;
-    font-size: 1.1rem;
+    font-size: var(--navbar-link-text-size-lg);
   }
     .nav-booknow-btn {
     width: 175px;
     letter-spacing: .5px;
   }
+}
+
+/************ EXTRA LARGE SCREENS ************/
+@media (min-width: 1200px) {
+  #brand-logo {
+    height: 110px;
+  }
+  .navbar-nav .nav-link {
+    margin-left: 30px;
+    font-size: var(--navbar-link-text-size-xl);
+    letter-spacing: .5px;
+}
 }
