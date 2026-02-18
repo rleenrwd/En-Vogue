@@ -36,18 +36,18 @@ primary website and operational platform.
 This project is actively being developed. Below are previews of completed
 UI sections from V1.
 
-### Mobile Navigation
+### Mobile - Collapsed
 
 ![Mobile Navbar](docs/screenshots/navbar/mobile_navbar.png)
 
-### Mobile Menu
+### Mobile - Expanded
 
 ![Mobile Navbar Expanded](docs/screenshots/navbar/expanded_mobile_navbar.png)
 
-### Tablet Layout (768px+)
+### Tablet Navigation (768px+)
 ![Tablet Navbar](docs/screenshots/navbar/tablet_navbar_768px.png)
 
-### Desktop Layout (992px+)
+### Desktop Navigation (992px+)
 ![Desktop Navbar](docs/screenshots/navbar/desktop_navbar_992px.png)
 ------------------------------------------------------------------------
 
