@@ -1,10 +1,12 @@
 import {useMediaQuery} from 'react-responsive';
+import {Link, useNavigate} from 'react-router-dom';
 import PageBanner from "../PageBanner/PageBanner";
 import logo from "../../assets/Logos/logo.png";
 import "./Navbar.css";
 
 export default function Navbar() {
     const isMobile = useMediaQuery({maxWidth: 767 });
+    const navigate = useNavigate();
 
     return (
         <>
@@ -81,7 +83,12 @@ export default function Navbar() {
                                     </div>
 
                                     <div className="nav-btn-container">
-                                        <button className="nav-booknow-btn">Book Now</button>
+                                        <button 
+                                        className="nav-booknow-btn"
+                                        type="button"
+                                        onClick={() => navigate('/booking')}>
+                                        Book Now
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -90,13 +97,13 @@ export default function Navbar() {
                         <>
                             <div className="container px-0 px-md-4">
                                 {/* TABLET & DESKTOP LAYOUT */}
-                                <a className="navbar-brand" href="#">
+                                <Link className="navbar-brand" to="/">
                                     <img 
                                     src={logo} 
                                     alt="En Vogue Grooming Logo"
                                     id="brand-logo"
                                     />
-                                </a>
+                                </Link>
 
                                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                                     <span className="navbar-toggler-icon"></span>
@@ -104,14 +111,19 @@ export default function Navbar() {
 
                                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                                     <div className="navbar-nav me-auto gap-3">
-                                        <a className="nav-link" aria-current="page" href="#">Home</a>
-                                        <a className="nav-link" href="#">About </a>
-                                        <a className="nav-link" href="#">Services</a>
-                                        <a className="nav-link" href="#">Testimonials</a>
-                                        <a className="nav-link" href="#">Contact</a>
+                                        <Link className="nav-link" aria-current="page" to="/">Home</Link>
+                                        <Link className="nav-link" to="/about">About </Link>
+                                        <Link className="nav-link" to="/services">Services</Link>
+                                        <Link className="nav-link" to="/testimonials">Testimonials</Link>
+                                        <Link className="nav-link" to="/contact">Contact</Link>
                                     </div>
                                     <div className="nav-btn-container">
-                                        <button className="nav-booknow-btn">Book Now</button>
+                                        <button 
+                                        className="nav-booknow-btn"
+                                        type="button"
+                                        onClick={() => navigate('/booking')}>
+                                        Book Now
+                                        </button>
                                     </div>
                                 </div>
                             </div>

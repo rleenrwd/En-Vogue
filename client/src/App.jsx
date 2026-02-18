@@ -11,10 +11,11 @@ import Booking from "./pages/Booking/Booking";
 
 function App() {
   return (
-    <main>
+    <>
 
       <Navbar />
 
+    <main className="app-content">
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/about" element={<About />}/>
@@ -24,8 +25,9 @@ function App() {
         <Route path="/booking" element={<Booking />}/>
 
       </Routes>
-
     </main>
+
+    </>
   );
 }
 
