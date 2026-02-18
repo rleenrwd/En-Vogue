@@ -1,6 +1,9 @@
 /************************** BASE STYLES (MOBILE) **************************/
 
 /************ NAV HEADER (MOBILE) ************/
+nav {
+  box-shadow: 0 3px 12px rgba(0,0,0,0.22)
+}
 
 .nav-envelope {
   text-decoration: none;
@@ -65,12 +68,17 @@
 
 
 /************************** MEDIA QUERIES **************************/
+/************ SMALL SCREENS ************/
+@media (max-width: 767px) {
+  .nav-booknow-btn {
+    margin-bottom: 15px;
+  }
+}
 
 /************ MEDIUM SCREENS ************/
 @media (min-width: 768px) {
   .navbar {
     padding: 0px !important;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.22);
   }
   #brand-logo {
     height: 95px;
