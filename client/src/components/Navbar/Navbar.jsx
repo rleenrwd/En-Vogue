@@ -1,6 +1,6 @@
 import {useMediaQuery} from 'react-responsive';
 import {Link, useNavigate} from 'react-router-dom';
-import PageBanner from "../PageBanner/PageBanner";
+import AnnounceBar from "../AnnounceBar/AnnounceBar";
 import logo from "../../assets/Logos/logo.png";
 import "./Navbar.css";
 
@@ -10,9 +10,9 @@ export default function Navbar() {
 
     return (
         <>
-            <PageBanner />
+            <AnnounceBar />
 
-                <nav className="navbar navbar-expand-md main-navbar sticky-top">
+                <nav className="navbar navbar-expand-md main-navbar">
                     {/* MOBILE LAYOUT */}
                     {isMobile ? (
                         <>

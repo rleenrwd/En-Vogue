@@ -1,4 +1,4 @@
-import "./PageBanner.css";
+import "./AnnounceBar.css";
 
 export default function PageBanner(){
     return (

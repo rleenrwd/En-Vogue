@@ -31,6 +31,30 @@ const seedServices = [
     image: 'https://images.unsplash.com/photo-1581888227599-779811939961?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     price: 100,
     durationMins: 120
+  },
+  {
+    name: 'Reluxe and Play',
+    subtitle: 'Test subtitle',
+    description: 'Professional daycare services.',
+    image: 'https://images.unsplash.com/photo-1581888227599-779811939961?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    price: 100,
+    durationMins: 120
+  },
+  {
+    name: 'Reluxe and Play',
+    subtitle: 'Test subtitle',
+    description: 'Professional daycare services.',
+    image: 'https://images.unsplash.com/photo-1581888227599-779811939961?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    price: 100,
+    durationMins: 120
+  },
+  {
+    name: 'Reluxe and Play',
+    subtitle: 'Test subtitle',
+    description: 'Professional daycare services.',
+    image: 'https://images.unsplash.com/photo-1581888227599-779811939961?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    price: 100,
+    durationMins: 120
   }
 ]
 
