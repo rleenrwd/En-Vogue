@@ -20,20 +20,20 @@ export default function Navbar() {
                                 <div className="container-fluid text-center">
                                     <div className="row pt-2 align-items-center">
                                         <div className="col-3">
-                                            <a href="#" className='nav-envelope'>
+                                            <Link to="/contact" className='nav-envelope'>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" className="bi bi-envelope" viewBox="0 0 16 16">
                                                     <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
                                                 </svg>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="col-6">
-                                            <a className="navbar-brand d-block mx-auto m-0 p-0" href="#">
+                                            <Link className="navbar-brand d-block mx-auto m-0 p-0" to="/">
                                                 <img 
                                                 src={logo} 
                                                 alt="En Vogue Grooming Logo"
                                                 id="brand-logo"
                                                 />
-                                            </a>
+                                            </Link>
                                         </div>
 
                                         <div className="col-3">
@@ -46,40 +46,40 @@ export default function Navbar() {
 
                                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                                     <div className="navbar-nav me-auto">
-                                        <a className='nav-link nav-link-container d-flex justify-content-between align-items-center nav-first-child' href="#">
+                                        <Link className='nav-link nav-link-container d-flex justify-content-between align-items-center nav-first-child' to="/">
                                             <span>Home</span>
                                             <span className="material-symbols-outlined pe-3">
                                                 chevron_right
                                             </span>
-                                        </a>
+                                        </Link>
 
-                                        <a className='nav-link nav-link-container d-flex justify-content-between align-items-center ' href="#">
+                                        <Link className='nav-link nav-link-container d-flex justify-content-between align-items-center ' to="/about">
                                             <span>About</span>
                                             <span className="material-symbols-outlined pe-3">
                                                 chevron_right
                                             </span>
-                                        </a>
+                                        </Link>
 
-                                        <a className='nav-link nav-link-container d-flex justify-content-between align-items-center' href="#">
+                                        <Link className='nav-link nav-link-container d-flex justify-content-between align-items-center' to="/services">
                                             <span>Services</span>
                                             <span className="material-symbols-outlined pe-3">
                                                 chevron_right
                                             </span>
-                                        </a>
+                                        </Link>
 
-                                        <a className='nav-link nav-link-container d-flex justify-content-between align-items-center' href="#">
+                                        <Link className='nav-link nav-link-container d-flex justify-content-between align-items-center' to="/testimonials">
                                             <span>Testimonials</span>
                                             <span className="material-symbols-outlined pe-3">
                                                 chevron_right
                                             </span>
-                                        </a>
+                                        </Link>
 
-                                        <a className='nav-link nav-link-container d-flex justify-content-between align-items-center nav-last-child' href="#">
+                                        <Link className='nav-link nav-link-container d-flex justify-content-between align-items-center nav-last-child' to="/contact">
                                             <span>Contact</span>
                                             <span className="material-symbols-outlined pe-3">
                                                 chevron_right
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
 
                                     <div className="nav-btn-container">
