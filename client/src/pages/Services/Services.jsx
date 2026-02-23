@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import { getServices } from "../../api/services";
 import ServiceCard from "../../components/Services/ServiceCard";
-import banner from "./images/dog_bath.jpg";
+import heroImage from "./images/dog_bath.jpg";
 
 export default function Services() {
     const [services, setServices] = useState([]);
@@ -33,9 +33,9 @@ export default function Services() {
             <section id="service-page-banner" className="container-fluid px-0">
             <img
             className="img-fluid w-100"
-            id="service-banner-img" 
-            src={banner} 
-            alt="" />
+            id="hero-image" 
+            src={heroImage} 
+            alt="Dog getting a bath" />
             </section>
 
             <h2>Our Signature Services</h2>
