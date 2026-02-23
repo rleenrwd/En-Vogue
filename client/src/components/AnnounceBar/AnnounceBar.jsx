@@ -1,6 +1,6 @@
 import "./AnnounceBar.css";
 
-export default function PageBanner(){
+export default function AnnounceBar(){
     return (
         <>
             <div className="pageBanner pt-2 text-center">

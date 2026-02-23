@@ -12,7 +12,7 @@ export default function Navbar() {
         <>
             <AnnounceBar />
 
-                <nav className="navbar navbar-expand-md main-navbar">
+                <nav className="navbar navbar-expand-md main-navbar mb-4">
                     {/* MOBILE LAYOUT */}
                     {isMobile ? (
                         <>
@@ -87,7 +87,7 @@ export default function Navbar() {
                                         className="nav-booknow-btn"
                                         type="button"
                                         onClick={() => navigate('/booking')}>
-                                        Book Now
+                                        Reserve Now
                                         </button>
                                     </div>
                                 </div>
@@ -122,7 +122,7 @@ export default function Navbar() {
                                         className="nav-booknow-btn"
                                         type="button"
                                         onClick={() => navigate('/booking')}>
-                                        Book Now
+                                        Reserve Now
                                         </button>
                                     </div>
                                 </div>
