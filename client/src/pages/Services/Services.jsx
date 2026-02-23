@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import { getServices } from "../../api/services";
 import ServiceCard from "../../components/Services/ServiceCard";
 import heroImage from "./images/dog_bath.jpg";
+import "./Services.css";
 
 export default function Services() {
     const [services, setServices] = useState([]);
@@ -24,31 +25,62 @@ export default function Services() {
         loadServices();
     }, []);
 
-    if (loading) return <p>Loading services...</p>;
-    if (error) return <p>{error}</p>;
 
     return (
         <>
             {/* HERO BANNER */}
-            <section id="service-page-banner" className="container-fluid px-0">
-            <img
-            className="img-fluid w-100"
-            id="hero-image" 
-            src={heroImage} 
-            alt="Dog getting a bath" />
+            <section className="service-page-hero-banner container-fluid px-0 mb-3">
+                <img
+                className="img-fluid w-100"
+                id="hero-image" 
+                src={heroImage} 
+                alt="Dog getting a bath" />
             </section>
 
-            <h2>Our Signature Services</h2>
-            {services.length === 0 ? (
-                <p>No services found.</p>
-            ) : (
-                <ul>
+            {/* INTRO */}
+            <section className="services-page-intro mb-5">
+                <div className="container-fluid">
+                    <div className="row align-items-center">
+
+                        <div className="col-12 col-md-5 d-flex justify-content-center services-h1-col-container">
+                            <h1 className="display-3 mb-0 service-intro-h1 d-none d-md-flex">Our <br />Signature<br />Services</h1>
+                            <h1 className="display-3 d-block d-md-none mb-0 service-intro-h1">Our Signature<br /><span className="d-block text-center">Services</span></h1>
+                        </div>
+
+                        {/* DESKTOP VERTICAL DIVIDER */}
+                        <div className="d-none d-md-flex col-md-2 justify-content-center">
+                            <div className="vr services-divider"></div>
+                        </div>
+
+                        {/* MOBILE HORIZONTAL DIVIDER */}
+                        <div className="d-block d-md-none col-12">
+                            <hr className="services-divider-mobile" />
+                        </div>
+
+                        <div className="col-12 col-md-5 d-flex justify-content-center">
+                            <p className="mb-0">At En Vogue Pet Grooming in San Francisco, we offer an exclusive collection of 
+                            signature pet services crafted for the most discerning pet parents. From couture-level grooming and indulgent spa baths to our boutique doggy day care, 
+                            refined overnight boarding, and elegant dog walking experiences — every offering is delivered with intention, precision, and poise. 
+                            This is care reimagined — where wellness meets sophistication, and every visit feels like a five-star retreat for your cherished companion
+                            </p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+
+            {loading && <p>Loading Services...</p>}
+            {error && <p>{error}</p>}
+
+            {!loading && !error && (
+                <ul className="services-list">
                     {services.map((service) => (
                         <ServiceCard key={service._id} service={service} />
                     ))}
                 </ul>
             )}
-        
         </>
     )
 
