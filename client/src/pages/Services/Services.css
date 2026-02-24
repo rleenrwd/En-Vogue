@@ -16,3 +16,11 @@
     margin: 1.5rem auto;
     opacity: 1;
 }
+
+.services-intro-p {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 90%;
+    margin: 0 auto;
+    font-family: var(--font-body);
+}

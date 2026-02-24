@@ -58,10 +58,10 @@ export default function Services() {
                         </div>
 
                         <div className="col-12 col-md-5 d-flex justify-content-center">
-                            <p className="mb-0">At En Vogue Pet Grooming in San Francisco, we offer an exclusive collection of 
+                            <p className="mb-0 services-intro-p">At En Vogue Pet Grooming in San Francisco, we offer an exclusive collection of 
                             signature pet services crafted for the most discerning pet parents. From couture-level grooming and indulgent spa baths to our boutique doggy day care, 
                             refined overnight boarding, and elegant dog walking experiences — every offering is delivered with intention, precision, and poise. 
-                            This is care reimagined — where wellness meets sophistication, and every visit feels like a five-star retreat for your cherished companion
+                            This is care reimagined — where wellness meets sophistication, and every visit feels like a five-star retreat for your cherished companion.
                             </p>
                         </div>
 
