@@ -49,12 +49,12 @@ export default function Services() {
 
                         {/* DESKTOP VERTICAL DIVIDER */}
                         <div className="d-none d-md-flex col-md-2 justify-content-center">
-                            <div className="vr services-divider"></div>
+                            <div className="services-divider"></div>
                         </div>
 
                         {/* MOBILE HORIZONTAL DIVIDER */}
                         <div className="d-block d-md-none col-12">
-                            <hr className="services-divider-mobile" />
+                            <div className="services-divider-mobile"></div>
                         </div>
 
                         <div className="col-12 col-md-5 d-flex justify-content-center">

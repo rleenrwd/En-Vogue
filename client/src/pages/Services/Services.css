@@ -24,3 +24,9 @@
     margin: 0 auto;
     font-family: var(--font-body);
 }
+
+/************************** MEDIA QUERIES **************************/
+/************ MEDIUM SCREENS ************/
+@media (min-width: 768px) {
+    
+}
