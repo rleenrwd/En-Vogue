@@ -40,7 +40,7 @@ UI sections from V1.
 
 ![Mobile Services Hero](docs/screenshots/navbar/mobile_services_hero_section.png)
 
-### Mobile - Expanded
+### Mobile - Navbar Expanded
 
 ![Mobile Navbar Expanded](docs/screenshots/navbar/mobile_navbar_expanded.png)
 
