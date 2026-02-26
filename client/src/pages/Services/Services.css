@@ -18,8 +18,6 @@
   border: 0;
   border-top: 3px solid #000;
   opacity: 1;
-
-
 }
 
 .services-intro-p-container {
@@ -40,8 +38,24 @@
     .service-intro-h1-M2L {
         display: none;
     }
+    .services-intro-hr-M2L {
+        display: none;
+    }
 }
 /************ MEDIUM SCREENS ************/
 @media (min-width: 768px) {
-
+    .service-intro-h1-SM {
+        display: none;
+    }
+    .services-intro-hr-SM-container{
+        display: none;
+    } 
+    .services-intro-hr-M2L {
+        width: 100%;
+        height: 200px;
+        border: none;
+        border-right: 5px solid black;
+        margin: 0;
+        opacity: 1;
+    }
 }

@@ -48,10 +48,11 @@ export default function Services() {
                         </div>
 
                         {/* DESKTOP VERTICAL DIVIDER */}
-                        {/* <hr className="services-intro-hr-M2L"/> */}
+                        <hr className="services-intro-hr-M2L col-md-2"/>
+                        
 
                         {/* MOBILE HORIZONTAL DIVIDER */}
-                        <div className="container">
+                        <div className="container services-intro-hr-SM-container">
                             <hr className="services-intro-hr-SM"/>
                         </div>
                         
