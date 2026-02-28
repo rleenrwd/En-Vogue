@@ -29,7 +29,7 @@ export default function Services() {
     return (
         <>
             {/* HERO BANNER */}
-            <section className="service-page-hero-banner container-fluid px-0 mb-3">
+            <section className="service-page-hero-banner container-fluid px-0 mb-4">
                 <img
                 className="img-fluid w-100"
                 id="hero-image" 
@@ -42,25 +42,19 @@ export default function Services() {
                 <div className="container-fluid">
                     <div className="row">
 
-                        <div className="col-12 col-md-5 services-h1-col-container">
+                        <div className="col-12 col-md-4 services-h1-col-container">
                             <h1 className="display-3 service-intro-h1-M2L">Our <br />Signature<br />Services</h1>
                             <h1 className="display-4 service-intro-h1-SM">Our Signature Services</h1>
                         </div>
 
-                        {/* DESKTOP VERTICAL DIVIDER */}
-                        <div className="col-md-2 justify-content-center align-items-center">
+                       {/* DESKTOP VERTICAL DIVIDER */}
+                        <div className="col-md-1 d-flex justify-content-center align-items-center">
                           <hr className="services-intro-hr-M2L"/>  
                         </div>
                         
                         
-
-                        {/* MOBILE HORIZONTAL DIVIDER */}
-                        <div className="container services-intro-hr-SM-container">
-                            <hr className="services-intro-hr-SM"/>
-                        </div>
-                        
  
-                        <div className="col-12 col-md-5 services-intro-p-container">
+                        <div className="col-12 col-md-7 services-intro-p-container">
                             <p className="services-intro-p">At En Vogue Pet Grooming in San Francisco, we offer an exclusive collection of 
                             signature pet services crafted for the most discerning pet parents. From couture-level grooming and indulgent spa baths to our boutique doggy day care, 
                             refined overnight boarding, and elegant dog walking experiences — every offering is delivered with intention, precision, and poise. 

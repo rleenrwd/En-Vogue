@@ -11,15 +11,6 @@
     text-align: center;
 }
 
-.services-intro-hr-SM {
-  width: 50%;
-  margin: 0 auto;
-  margin-bottom: 25px;
-  border: 0;
-  border-top: 3px solid #000;
-  opacity: 1;
-}
-
 .services-intro-p-container {
     display: flex;
     align-items: center;
@@ -34,6 +25,7 @@
 }
 
 /************************** MEDIA QUERIES **************************/
+/************ SMALL SCREENS ************/
 @media (max-width: 767px) {
     .service-intro-h1-M2L {
         display: none;
@@ -47,9 +39,6 @@
     .service-intro-h1-SM {
         display: none;
     }
-    .services-intro-hr-SM-container{
-        display: none;
-    } 
     .services-intro-hr-M2L {
         border: 0;
         margin: 0;
@@ -58,4 +47,17 @@
         border-right: 5px solid #000;
         opacity: 1;
     }
+    .services-h1-col-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .services-intro-p-container {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
 }
+
