@@ -48,7 +48,10 @@ export default function Services() {
                         </div>
 
                         {/* DESKTOP VERTICAL DIVIDER */}
-                        <hr className="services-intro-hr-M2L col-md-2"/>
+                        <div className="col-md-2 justify-content-center align-items-center">
+                          <hr className="services-intro-hr-M2L"/>  
+                        </div>
+                        
                         
 
                         {/* MOBILE HORIZONTAL DIVIDER */}
