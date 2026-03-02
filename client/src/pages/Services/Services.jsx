@@ -29,7 +29,7 @@ export default function Services() {
     return (
         <>
             {/* HERO BANNER */}
-            <section className="service-page-hero-banner container-fluid px-0 mb-4">
+            <section className="service-page-hero-banner container-fluid px-0 mb-4 mt-3">
                 <img
                 className="img-fluid w-100"
                 id="hero-image" 

@@ -119,7 +119,7 @@ nav {
     height: 110px;
   }
   .navbar-nav .nav-link {
-    margin-left: 30px;
+    margin-left: 20px;
     font-size: var(--navbar-link-text-size-xl);
     letter-spacing: .5px;
 }

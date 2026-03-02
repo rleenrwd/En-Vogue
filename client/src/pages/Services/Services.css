@@ -55,9 +55,32 @@
 
     .services-intro-p-container {
         display: flex;
-        justify-content: end;
+        justify-content: center;
         align-items: center;
     }
 
 }
 
+/************ LARGE SCREENS ************/
+@media (min-width: 992px) {
+    .services-page-intro {
+        margin-top: 40px;
+    }
+}
+
+/************ X-LARGE SCREENS ************/
+
+@media (min-width: 1200px) {
+    .services-intro-p {
+        max-width: 87%;
+        font-size: 1.1rem;
+    }
+}
+
+/************ XX-LARGE SCREENS ************/
+
+@media (min-width: 1400px) {
+    .services-intro-p {
+        max-width: 83%;
+    }
+}
