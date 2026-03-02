@@ -44,11 +44,11 @@ UI sections from V1.
 
 ![Mobile Navbar Expanded](docs/screenshots/navbar/mobile_navbar_expanded.png)
 
-### Tablet Navigation (768px+)
-![Tablet Navbar](docs/screenshots/navbar/tablet_navbar_768px.png)
+### Tablet Services 'Intro' Section (768px+)
+![Tablet Services Intro](docs/screenshots/navbar/tablet_services_intro.png)
 
-### Desktop Navigation (992px+)
-![Desktop Navbar](docs/screenshots/navbar/desktop_navbar_992px.png)
+### Desktop Services 'Intro' Section (992px+)
+![Desktop Services Intro](docs/screenshots/navbar/desktop_services_intro.png)
 ------------------------------------------------------------------------
 
 ## Why This Project Exists
