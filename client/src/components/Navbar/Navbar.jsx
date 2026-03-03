@@ -12,7 +12,7 @@ export default function Navbar() {
         <>
             <AnnounceBar />
 
-                <nav className="navbar navbar-expand-md main-navbar mb-4">
+                <nav className="navbar navbar-expand-md main-navbar mb-4 sticky-top">
                     {/* MOBILE LAYOUT */}
                     {isMobile ? (
                         <>

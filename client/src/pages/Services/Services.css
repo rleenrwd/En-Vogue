@@ -21,14 +21,15 @@
     line-height: 1.6;
     max-width: 90%;
     font-family: var(--font-body);
-    text-align: left;
+    text-align: center;
 }
 
 .services-page-intro {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 /************ SERVICE LIST (MOBILE) ************/
+
 .services-list {
     padding-left: 0px;
     max-width: 90%;
@@ -54,7 +55,7 @@
         border: 0;
         margin: 0;
         width: 0;
-        height: 200px;
+        height: 140px;
         border-right: 5px solid #000;
         opacity: 1;
     }
@@ -69,6 +70,9 @@
         justify-content: center;
         align-items: center;
     }
+    .services-intro-p {
+        text-align: left;
+    } 
 
 }
 
@@ -76,6 +80,9 @@
 @media (min-width: 992px) {
     .services-page-intro {
         margin-top: 40px;
+    }
+    .services-intro-hr-M2L {
+        height: 200px;
     }
 }
 
