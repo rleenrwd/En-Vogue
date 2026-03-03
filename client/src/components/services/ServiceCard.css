@@ -1,6 +1,29 @@
 .main-card-container {
     background-color: whitesmoke !important;
-    /* border: .3px solid black !important; */
-    /* padding: 10px; */
     border-radius: 0px !important;
+}
+
+.service-card-title {
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+.service-card-subtitle {
+    font-size: 1rem;
+    font-family: "EB Garamond";
+}
+
+.service-card-link {
+    background-color: var(--button-bg) !important;
+    color: var(--accent-color) !important;
+    font-family: var(--button-text) !important;
+    font-size: var(--button-text-sm-screen);
+    border-radius: 10px;
+    padding: 10px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+
 }

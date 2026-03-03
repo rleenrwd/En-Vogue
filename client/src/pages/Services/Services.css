@@ -11,6 +11,14 @@
     text-align: center;
 }
 
+.services-intro-hr-sm {
+    width: 50%;
+    height: 2px;
+    margin: 1rem auto;
+    border: none;
+    background: linear-gradient(to right, transparent, black, transparent);
+}
+
 .services-intro-p-container {
     display: flex;
     align-items: center;

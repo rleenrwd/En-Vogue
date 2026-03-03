@@ -52,17 +52,20 @@ export default function Services() {
                           <hr className="services-intro-hr-M2L"/>  
                         </div>
                         
-                        
+                        <hr className="d-sm-block d-md-none services-intro-hr-sm mt-2 mb-3"/>
+
  
                         <div className="col-12 col-md-7 services-intro-p-container">
-
+                            {/* SMALL SCREEN */}
                             <p className="d-block d-md-none services-intro-p">At En Vogue, we offer couture-level grooming and refined pet experiences - crafted with intention, precision, and poise. This is En Vogue. </p>
-
+                            
+                            {/* MEDIUM SCREEN */}
                             <p className="d-none d-md-block d-lg-none services-intro-p">At En Vogue Pet Grooming, we offer an exclusive collection of 
                                 signature pet services crafted for discerning pet parents. From couture-level grooming and indulgent spa 
                                 baths to refined day care and boarding experiences — every service is delivered with intention, precision, 
                                 and poise. </p>
-
+                            
+                            {/* LARGE SCREEN */}
                             <p className="services-intro-p d-none d-lg-block">At En Vogue Pet Grooming in San Francisco, we offer an exclusive collection of 
                             signature pet services crafted for the most discerning pet parents. From couture-level grooming and indulgent spa baths to our boutique doggy day care, 
                             refined overnight boarding, and elegant dog walking experiences — every offering is delivered with intention, precision, and poise. 
