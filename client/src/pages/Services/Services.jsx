@@ -29,7 +29,7 @@ export default function Services() {
     return (
         <>
             {/* HERO BANNER */}
-            <section className="service-page-hero-banner container-fluid px-0 mb-4 mt-3">
+            <section className="service-page-hero-banner container-fluid px-0 mb-4">
                 <img
                 className="img-fluid w-100"
                 id="hero-image" 
@@ -38,7 +38,7 @@ export default function Services() {
             </section>
 
             {/* INTRO */}
-            <section className="services-page-intro mb-5">
+            <section className="services-page-intro">
                 <div className="container-fluid">
                     <div className="row">
 
@@ -73,8 +73,8 @@ export default function Services() {
 
             {!loading && !error && (
                 <ul className="services-list">
-                    {services.map((service) => (
-                        <ServiceCard key={service._id} service={service} />
+                    {services.map((service, index) => (
+                        <ServiceCard key={service._id} service={service} index={index}/>
                     ))}
                 </ul>
             )}

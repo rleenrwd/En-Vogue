@@ -2,7 +2,8 @@
 
 /************ NAV HEADER (MOBILE) ************/
 nav {
-  box-shadow: 0 3px 12px rgba(0,0,0,0.22)
+  background-color: var(--navbar-bg);
+  box-shadow: 0 3px 12px rgba(0,0,0,0.22);
 }
 
 .nav-envelope {
