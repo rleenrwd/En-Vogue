@@ -88,3 +88,20 @@
         }
     }
 }
+
+/************ X-LARGE SCREENS ************/
+@media (min-width: 1200px) {
+    .card-body {
+        hr {
+            width: 70%;
+        }
+        align-items: center;
+        h5 {
+            font-size: 1.8rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+
+    }
+}
