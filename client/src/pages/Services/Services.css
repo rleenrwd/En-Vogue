@@ -86,11 +86,11 @@
 
 /************ LARGE SCREENS ************/
 @media (min-width: 992px) {
-    .services-page-intro {
-        margin-top: 40px;
-    }
     .services-intro-hr-M2L {
         height: 200px;
+    }
+    .services-page-intro {
+        margin-bottom: 40px;
     }
 }
 

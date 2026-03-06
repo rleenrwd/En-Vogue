@@ -79,7 +79,7 @@ export default function Services() {
             </section>
 
             {/* SERVICE CARD SECTION */}
-            <section className="service-card-section">
+            <section className="service-card-section mb-4">
                 {loading && <p>Loading Services...</p>}
                 {error && <p>{error}</p>}
 
