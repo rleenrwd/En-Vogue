@@ -14,7 +14,7 @@ export default function ServiceCard({ service, index }) {
        
                 <div 
                 className={
-                    `col-12 col-md-6
+                    `col-12 col-md-6 
                     ${isEven ? "order-0 order-md-0" : "order-md-1"}
                     `}>
                     <img src={service.image} className="img-fluid service-card-image object-fit-cover" alt="Grooming photos"/>
@@ -22,7 +22,7 @@ export default function ServiceCard({ service, index }) {
 
                 <div 
                 className={
-                    `col-12 col-md-6 
+                    `col-12 col-md-6 right-side-of-card
                     ${isEven ? "order-1 order-md-1" : "order-1 order-md-0"}
                     `}>
 
