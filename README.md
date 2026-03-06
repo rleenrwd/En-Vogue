@@ -36,19 +36,22 @@ primary website and operational platform.
 This project is actively being developed. Below are previews of completed
 UI sections from V1.
 
-### Mobile - Services 'Hero' Section
+## Services Page
 
-![Mobile Services Hero](docs/screenshots/navbar/mobile_services_hero_section.png)
+### Mobile
+![Mobile Services Page](docs/screenshots/service_page/Mobile_Services_Page.png)
 
-### Mobile - Navbar Expanded
+### Tablet
+![Tablet Services Page](docs/screenshots/service_page/Tablet_Services_Page.png)
 
-![Mobile Navbar Expanded](docs/screenshots/navbar/mobile_navbar_expanded.png)
+### Desktop
+![Desktop Services Page](docs/screenshots/service_page/Desktop_Services_Page.png)
 
-### Tablet Services 'Intro' Section (768px+)
-![Tablet Services Intro](docs/screenshots/navbar/tablet_services_intro.png)
+### Mobile - Service Card 
+![Mobile Service Card](docs/screenshots/service_page/Mobile_Service_Card.png)
 
-### Desktop Services 'Intro' Section (992px+)
-![Desktop Services Intro](docs/screenshots/navbar/desktop_services_intro.png)
+### Desktop - Service Card(s)
+![Desktop Services Cards](docs/screenshots/service_page/Desktop_Service_Cards.png)
 ------------------------------------------------------------------------
 
 ## Why This Project Exists
