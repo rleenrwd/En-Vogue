@@ -41,14 +41,14 @@ UI sections from V1.
 ### Mobile
 ![Mobile Services Page](docs/screenshots/service_page/Mobile_Services_Page.png)
 
+### Mobile - Service Card 
+![Mobile Service Card](docs/screenshots/service_page/Mobile_Service_Card.png)
+
 ### Tablet
 ![Tablet Services Page](docs/screenshots/service_page/Tablet_Services_Page.png)
 
 ### Desktop
 ![Desktop Services Page](docs/screenshots/service_page/Desktop_Services_Page.png)
-
-### Mobile - Service Card 
-![Mobile Service Card](docs/screenshots/service_page/Mobile_Service_Card.png)
 
 ### Desktop - Service Card(s)
 ![Desktop Services Cards](docs/screenshots/service_page/Desktop_Service_Cards.png)
