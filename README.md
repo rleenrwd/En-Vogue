@@ -36,6 +36,11 @@ primary website and operational platform.
 This project is actively being developed. Below are previews of completed
 UI sections from V1.
 
+## Navbar Dropdown
+
+### Mobile
+![Mobile Navbar Dropdown](docs/screenshots/navbar/Mobile_Dropdown_Menu.png)
+
 ## Services Page
 
 ### Mobile
