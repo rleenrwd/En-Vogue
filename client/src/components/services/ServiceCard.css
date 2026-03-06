@@ -1,3 +1,5 @@
+/************************** BASE STYLES (MOBILE) **************************/
+/************ CARD (MOBILE) ************/
 .main-card-container {
     background-color: whitesmoke !important;
     border-radius: 0px !important;
@@ -13,17 +15,25 @@
     font-family: "EB Garamond";
 }
 
+.price-line {
+    margin-bottom: 30px;
+}
+
 .service-card-link {
     background-color: var(--button-bg) !important;
     color: var(--accent-color) !important;
     font-family: var(--button-text) !important;
     font-size: var(--button-text-sm-screen);
+    letter-spacing: 1px;
     border-radius: 10px;
-    padding: 10px 50px;
+    padding: 10px 24px;
     text-decoration: none;
     text-transform: uppercase;
 }
 
 @media (max-width: 767px) {
+    .card-body {
+        padding-bottom: 30px !important;
+    }
 
 }

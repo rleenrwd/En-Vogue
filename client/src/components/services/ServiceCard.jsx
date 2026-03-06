@@ -30,14 +30,14 @@ export default function ServiceCard({ service, index }) {
                         <h5 className="card-title service-card-title">{service.name}</h5>
                         <p className="card-text service-card-subtitle">{service.subtitle}</p>
                         <hr />
-                        <p className="card-text service-card-subtitle">
+                        <p className="card-text service-card-subtitle price-line">
                             Approx. {hours} 
                             {minutes > 0 && ` hr ${minutes} mins`}
                             {minutes === 0 && " hrs"} | 
                             Starting at ${service.price}
                         </p>
 
-                        <Link to={`/services/${service._id}`} className="service-card-link ">Read More</Link>
+                        <Link to={`/services/${service._id}`} className="service-card-link">Read More</Link>
 
                     </div>
                 </div>
