@@ -6,8 +6,8 @@ const Service = require('../models/Service');
 
 const seedServices = [
     {
-    name: 'The En Vogue Finish',
-    subtitle: 'A flawless look. A signature touch. An En Vogue Finish.',
+    name: 'The \'En Vogue\' Finish',
+    subtitle: 'Our Full Groom Service - A flawless look. A signature touch. An En Vogue Finish.',
     description:
       'Our most refined grooming experience, The En Vogue Finish is a 3-hour, 20-minute session tailored to perfection. It includes a luxurious bath, deep-conditioning treatment, precision coat styling or breed-specific cut, paw and pad care, ear cleansing, and an elegant finishing spritz. Designed for pets with a taste for the exquisite, this signature service starts at $130 and delivers polished results worthy of the runway.',
     image: 'https://static.wixstatic.com/media/11062b_b8900eefe71e426c8224fc1d1f269ed7~mv2.jpg',
@@ -16,7 +16,7 @@ const seedServices = [
     },
     {
     name: 'The Luxe Lather',
-    subtitle: 'Shampoo & Condition - A silky cleanse for the most stylish coats.',
+    subtitle: 'Our Shampoo & Condition Service - A silky cleanse for the most stylish coats.',
     description:
       'Our professional bathing service pampers your pet with gentle, natural shampoos and nourishing conditioners, leaving their coat soft, fresh, and radiant. Every detail is designed to soothe the skin, calm the senses, and deliver a spa-like experience worthy of the En Vogue name.',
     image:
@@ -26,7 +26,7 @@ const seedServices = [
   },
   {
     name: 'PAWlish & Shine',
-    subtitle: 'Teeth Cleaning Service - Healthy. Gleaming. En Vogue.',
+    subtitle: 'Our Teeth Cleaning Service - Healthy. Gleaming. En Vogue.',
     description: "This specialized service, provided by a trusted third-party expert, focuses on maintaining the health and brilliance of your pet’s teeth and gums. Gentle yet effective, it promotes fresher breath, cleaner teeth, and overall wellness.",
     image: 'https://static.wixstatic.com/media/15e1fadb6f8945b0baceadc73acfb5d2.jpg',
     price: 300,
@@ -34,7 +34,7 @@ const seedServices = [
   },
   {
     name: 'Reluxe and Play',
-    subtitle: 'Doggy Daycare Service - Because luxury and fun go paw in paw.',
+    subtitle: 'Our Doggy Daycare Service - Because luxury and fun go paw in paw.',
     description: 'Our boutique daycare offers a serene, climate-controlled space where pets can play, rest, and socialize under attentive supervision. With tailored enrichment, plush lounges, and a low-stress environment, your companion enjoys comfort, care, and calm throughout the day.',
     image: 'https://static.wixstatic.com/media/8f06d423f1074c479bf65ababdd2d897.jpg',
     price: 35,
