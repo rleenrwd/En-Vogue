@@ -1,7 +1,6 @@
 import {useEffect, useState} from "react";
 import { getServices } from "../../api/services";
 import ServiceCard from "../../components/Services/ServiceCard";
-// import heroImage from "./images/dog_bath.jpg";
 import "./Services.css";
 
 export default function Services() {
@@ -28,14 +27,6 @@ export default function Services() {
 
     return (
         <>
-            {/* HERO BANNER */}
-            {/* <section className="service-page-hero-banner container-fluid px-0 mb-4">
-                <img
-                className="img-fluid w-100"
-                id="hero-image" 
-                src={heroImage} 
-                alt="Dog getting a bath" />
-            </section> */}
 
             {/* INTRO */}
             <section className="services-page-intro">

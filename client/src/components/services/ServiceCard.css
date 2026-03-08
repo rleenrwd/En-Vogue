@@ -26,15 +26,20 @@
 }
 
 .service-card-link {
-    background-color: var(--button-bg) !important;
-    color: var(--accent-color) !important;
-    font-family: var(--button-text) !important;
+    background-color: var(--button-bg);
+    color: var(--accent-color);
+    font-family: var(--button-text);
     font-size: var(--button-text-sm-screen);
     letter-spacing: 1px;
     border-radius: 10px;
     padding: 10px 24px;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.service-card-link:hover {
+    cursor: pointer;
+    background-color: rgb(26, 26, 26);
 }
 
 /************************** MEDIA QUERIES **************************/

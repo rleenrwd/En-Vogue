@@ -16,13 +16,15 @@
         text-align: center;
     }
     .about-hr {
-        width: 100%;
         height: 2px;
         margin: 1rem auto;
+        width: 85% !important;
         border: none;
         background: linear-gradient(to right, transparent, black, transparent);
     }
     .about-paragraph {
+        text-align: justify;
+        text-justify: inter-word;
         font-size: 1rem;
         line-height: 1.7;
         max-width: 80%;
@@ -37,5 +39,59 @@
         font-weight: bold;
         color: var(--accent-color);
     }
+    .about-btn-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .about-btn {
+        background-color: var(--button-bg);
+        color: var(--accent-color);
+        font-family: var(--button-text);
+        font-size: var(--button-text-sm-screen);
+        letter-spacing: 1px;
+        border-radius: 10px;
+        padding: 10px 24px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .about-btn:hover {
+        cursor: pointer;
+        background-color: rgb(26, 26, 26);
+    }
 
+}
+
+/************************** MEDIA QUERIES **************************/
+
+/************ MEDIUM SCREENS ************/
+@media (min-width: 768px) {
+    .about-paragraph {
+        width: 70%;
+        max-width: 70%;
+    }
+    .about-hr {
+        max-width: 75% !important;
+    }
+}
+
+/************ LARGE SCREENS ************/
+@media (min-width: 992px) {
+    .about-btn {
+        padding: 10px 40px !important;
+    }
+}
+/************ X-LARGE SCREENS ************/
+
+@media (min-width: 1200px) {
+    .about-paragraph {
+        width: 50%;
+        max-width: 50%;
+        font-size: 1.1rem !important;
+    }
+
+    .about-hr {
+        max-width: 55% !important;
+    }
 }
