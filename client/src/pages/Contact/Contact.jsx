@@ -21,6 +21,7 @@ export default function Contact() {
         const timer = setTimeout(() => {
             setSuccessMessage("");
         }, 8000);
+
         return () => clearTimeout(timer);
     }, [successMessage]);
 
@@ -94,11 +95,11 @@ export default function Contact() {
                             </p>
 
                             {successMessage && (
-                                <p className="contact-success-message text-light bg-success">{successMessage}</p>
+                                <p className="contact-success-message alert alert-success">{successMessage}</p>
                             )}
 
                             {errorMessage && (
-                                <p className="contact-error-message text-light bg-danger">{errorMessage}</p>
+                                <p className="contact-error-message alert alert-danger">{errorMessage}</p>
                             )}
 
                             <form className="contact-form needs-validation" onSubmit={handleSubmit} noValidate>
@@ -111,7 +112,7 @@ export default function Contact() {
                                         onChange={handleChange}
                                         className="form-control"
                                         id="name"
-                                        placeholder="Your name"
+                                        placeholder="Jane Smith"
                                         required
                                     />
                                     <div className="invalid-feedback">
