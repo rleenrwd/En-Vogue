@@ -43,20 +43,22 @@ UI sections from V1.
 
 ## Services Page
 
-### Mobile
-![Mobile Services Page](docs/screenshots/service_page/Mobile_Services_Page.png)
-
 ### Mobile - Service Card 
 ![Mobile Service Card](docs/screenshots/service_page/Mobile_Service_Card.png)
-
-### Tablet
-![Tablet Services Page](docs/screenshots/service_page/Tablet_Services_Page.png)
 
 ### Desktop
 ![Desktop Services Page](docs/screenshots/service_page/Desktop_Services_Page.png)
 
 ### Desktop - Service Card(s)
 ![Desktop Services Cards](docs/screenshots/service_page/Desktop_Service_Cards.png)
+
+## Contact Page
+
+### Desktop - Top
+![Desktop Contact Page Top](docs/screenshots/contact_page/Desktop_Contact_Page.png)
+
+### Desktop - Contact Form
+![Desktop Contact Form](docs/screenshots/contact_page/Desktop_Contact_Form.png)
 ------------------------------------------------------------------------
 
 ## Why This Project Exists
