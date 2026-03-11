@@ -115,11 +115,19 @@
 
 /************ X-LARGE SCREENS ************/
 @media (min-width: 1200px) {
+    .contact-hr {
+        width: 90% !important;
+    }
     .contact-form-content {
         width: 78%;
     }
-
-    .contact-image {
-        min-height: 760px;
+    .contact-intro {
+        font-size: 1.2rem;
+    }
+    .contact-form .form-label {
+        font-size: 1.1rem;
+}
+    .contact-form .form-control {
+        font-size: 1.1rem;
     }
 }
