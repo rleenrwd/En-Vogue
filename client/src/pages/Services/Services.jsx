@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import { getServices } from "../../api/services";
+import { getServices } from "../../api/Services/services";
 import ServiceCard from "../../components/Services/ServiceCard";
 import "./Services.css";
 
