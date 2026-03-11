@@ -33,7 +33,8 @@ export default function ServiceCard({ service, index }) {
                         <p className="card-text service-card-subtitle price-line">
                             Approx. {hours} 
                             {minutes > 0 && ` hr ${minutes} mins`}
-                            {minutes === 0 && " hrs"} | 
+                            {hours === 1 && ` hr ` || minutes === 0 && " hrs "}
+                             | 
                             Starting at ${service.price}
                         </p>
 
