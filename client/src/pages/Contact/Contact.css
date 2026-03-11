@@ -70,7 +70,7 @@
 
 .contact-form .form-control:focus {
     box-shadow: none;
-    border-color: #000;
+    border-color: var(--accent-color);
 }
 
 .contact-submit-btn {
@@ -96,20 +96,24 @@
 @media (min-width: 768px) {
     .contact-form-content {
         width: 82%;
-        /* padding: 3rem 0; */
     }
 
     .contact-intro {
         text-align: left;
     }
+}
 
-    .contact-title {
-        text-align: left;
+/************ LARGE SCREENS ************/
+@media (min-width: 992px) {
+    .contact-intro {
+        font-size: 1.1rem;
+    }
+    .contact-submit-btn {
+        width: 50% !important;
     }
 }
 
-
-/************ MEDIUM SCREENS ************/
+/************ X-LARGE SCREENS ************/
 @media (min-width: 1200px) {
     .contact-form-content {
         width: 78%;
