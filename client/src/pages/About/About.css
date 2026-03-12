@@ -1,37 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /************************** BASE STYLES (MOBILE) **************************/
+/************ HERO SECTION (MOBILE) ************/
+.about-hero-section {
+    position: relative;
+
+}
+
+.about-hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    background-color: whitesmoke;
+}
+
+.about-hero-image {
+    width: 100;
+    object-fit: cover;
+    display: block;
+}
+
+.about-hero-text {
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    transform: translateY(-50%);
+    z-index: 2;
+    max-width: 40%;
+}
+
+.about-hero-title {
+    margin-bottom: 0.75rem;
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    line-height: 1.05;
+    letter-spacing: 0.5px;
+}
+
+.about-hero-subtext {
+    margin: 0;
+    font-size: .9rem;
+    line-height: 1.5;
+    max-width: 240px;
+    font-family: var(--font-body);
+}
+
+.about-logo-divider {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    margin-top: -1.5rem;
+}
+
+.about-logo-divider-image {
+    width: 50px;
+    height: auto;
+    display: block;
+}
+
+
+
 /************ MAIN CONTENT (MOBILE) ************/
-.about-main-section {
+.about-main-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    max-width: 90%;
     font-family: var(--font-heading);
+    margin: 0 auto;
+    text-align: left;
 }
 
-.about-main-section{
+.about-main-content{
 
-    .about-header {
-        text-align: center;
-    }
-    .about-hr {
-        height: 2px;
-        margin: 1rem auto;
-        width: 85% !important;
-        border: none;
-        background: linear-gradient(to right, transparent, black, transparent);
-    }
-    .about-paragraph {
-        text-align: justify;
-        text-justify: inter-word;
-        font-size: 1rem;
-        line-height: 1.7;
-        max-width: 80%;
-        margin: 0 auto;
-    }
     .signature {
         text-align: center;
+        margin-top: 10px;
     }
     .about-span {
         font-family: "Corinthia", sans-serif ;
@@ -42,8 +90,7 @@
     .about-btn-container {
         display: flex;
         justify-content: center;
-        margin-top: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     .about-btn {
         background-color: var(--button-bg);
@@ -53,6 +100,8 @@
         letter-spacing: 1px;
         border-radius: 10px;
         padding: 10px 24px;
+        width: 80%;
+        text-align: center;
         text-decoration: none;
         text-transform: uppercase;
     }
