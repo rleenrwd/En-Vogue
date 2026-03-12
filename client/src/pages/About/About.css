@@ -132,12 +132,17 @@
 
 /************ MEDIUM SCREENS ************/
 @media (min-width: 768px) {
-    .about-paragraph {
-        width: 70%;
-        max-width: 70%;
+    .about-main-content {
+        width: 79% !important;
     }
-    .about-hr {
-        max-width: 75% !important;
+    .about-hero-subtext {
+        font-size: 1rem;
+    }
+    .about-hero-title {
+        font-size: 49.744px;
+    }
+    .about-btn {
+        width: 60% !important;
     }
 }
 
