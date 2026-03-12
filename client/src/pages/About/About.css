@@ -124,6 +124,11 @@
 }
 
 /************************** MEDIA QUERIES **************************/
+@media (min-width: 576px) {
+    .about-main-content {
+        width: 82% !important;
+    }
+}
 
 /************ MEDIUM SCREENS ************/
 @media (min-width: 768px) {
