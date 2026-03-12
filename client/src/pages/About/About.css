@@ -149,7 +149,13 @@
 /************ LARGE SCREENS ************/
 @media (min-width: 992px) {
     .about-btn {
-        padding: 10px 40px !important;
+        width: 55% !important;
+    }
+    .about-hero-title {
+        font-size: 57.136px;
+    }
+    .about-main-content {
+        width: 75% !important;
     }
 }
 /************ X-LARGE SCREENS ************/
