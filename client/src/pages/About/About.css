@@ -133,7 +133,7 @@
 /************ MEDIUM SCREENS ************/
 @media (min-width: 768px) {
     .about-main-content {
-        width: 79% !important;
+        width: 70% !important;
     }
     .about-hero-subtext {
         font-size: 1rem;
@@ -142,32 +142,78 @@
         font-size: 49.744px;
     }
     .about-btn {
-        width: 60% !important;
+        width: 55% !important;
+    }
+    .about-logo-divider-image {
+        width: 60px;
+        margin-top: -6.5px;
+        margin-bottom: 10px;
     }
 }
 
 /************ LARGE SCREENS ************/
 @media (min-width: 992px) {
     .about-btn {
-        width: 55% !important;
+        width: 50% !important;
     }
     .about-hero-title {
         font-size: 57.136px;
     }
     .about-main-content {
-        width: 75% !important;
+        width: 65% !important;
+    }
+    .about-quote {
+        font-size: 1.3rem !important;
     }
 }
 /************ X-LARGE SCREENS ************/
 
 @media (min-width: 1200px) {
-    .about-paragraph {
-        width: 50%;
-        max-width: 50%;
-        font-size: 1.1rem !important;
+    .about-hero-title {
+        font-size: 64px !important;
     }
+    .about-hero-subtext {
+        font-size: 1.2rem !important;
+        max-width: 325px;
+    }
+    .about-main-content {
+        width: 60% !important;
+    }
+    .about-btn {
+        width: 45% !important;
+    }
+    .about-main-content-paragraph {
+        font-size: 1.1rem;
+    }
+    .about-quote {
+        font-size: 1.4rem !important;
+    }
+    .about-logo-divider-image {
+        width: 70px;
+        margin-top: -12px;
+        margin-bottom: 20px;
 
-    .about-hr {
-        max-width: 55% !important;
+    }
+  
+}
+
+/************ X-LARGE SCREENS ************/
+@media (min-width: 1400px) {
+    .about-hero-title {
+        font-size: 70px !important;
+    }
+    .about-hero-subtext {
+        font-size: 1.3rem !important;
+    }
+    .about-main-content {
+        width: 55% !important;
+    }
+    .about-btn {
+        width: 35% !important;
+    }
+    .about-logo-divider-image {
+        width: 73px;
+        margin-top: -14px;
+
     }
 }
