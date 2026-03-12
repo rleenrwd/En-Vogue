@@ -109,6 +109,17 @@
         cursor: pointer;
         background-color: rgb(26, 26, 26);
     }
+    .about-quote {
+        text-align: center;
+        font-style: italic;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        color: var(--accent-color);
+        font-weight: 500;
+    }
 
 }
 

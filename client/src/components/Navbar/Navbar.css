@@ -62,6 +62,7 @@ nav {
   padding: 10px;
   border-radius: 10px;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .nav-booknow-btn:hover {
