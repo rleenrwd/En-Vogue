@@ -1,4 +1,4 @@
-import {Routes, Route} from 'react-router-dom';
+import {Routes, Route, useLocation} from 'react-router-dom';
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
@@ -14,10 +14,13 @@ import Booking from "./pages/Booking/Booking";
 import Login from "./admin/pages/Login/Login";
 
 function App() {
+  const location = useLocation();
+  const isAdminRoute = location.pathname.startsWith("/admin");
+
   return (
     <div className='d-flex flex-column min-vh-100'>
 
-      <Navbar />
+      {!isAdminRoute && <Navbar />}
 
       <main className="app-content flex-grow-1">
         <Routes>
@@ -34,7 +37,7 @@ function App() {
         </Routes>
       </main>
 
-      <Footer />
+      {!isAdminRoute && <Footer />}
 
     </div>
   );
