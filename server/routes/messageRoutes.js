@@ -4,6 +4,7 @@ const messageController = require('../controllers/messageController');
 const adminOnly = require('../middleware/adminOnly');
 const requireAuth = require('../middleware/requireAuth');
 
+// Public
 router.post('/', messageController.createMessage);
 
 // Admin

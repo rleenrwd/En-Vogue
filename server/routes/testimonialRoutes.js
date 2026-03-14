@@ -4,6 +4,7 @@ const testimonialController = require('../controllers/testimonialController');
 const requireAuth = require('../middleware/requireAuth');
 const adminOnly = require('../middleware/adminOnly');
 
+// Public
 router.get('/', testimonialController.getTestimonials);
 
 // admin
