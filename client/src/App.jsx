@@ -12,6 +12,7 @@ import Booking from "./pages/Booking/Booking";
 
 // ADMIN PAGES
 import Login from "./admin/pages/Login/Login";
+import Dashboard from "./admin/pages/Dashboard/Dashboard";
 
 function App() {
   const location = useLocation();
@@ -34,6 +35,7 @@ function App() {
           
           {/* ADMIN ROUTES */}
           <Route path="/admin/login" element={<Login />} />
+          <Route path="/admin/dashboard" element={<Dashboard />}  />
         </Routes>
       </main>
 
