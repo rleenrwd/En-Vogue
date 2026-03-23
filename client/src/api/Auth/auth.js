@@ -16,7 +16,7 @@ export async function getMe() {
         const response = await axios.get("/auth/me");
         return response.data;
     } catch (err) {
-        const message = err.response?.data?.message || "Unauthorized.";
+        const message = err.response?.data?.message || "Session expired. Please log in again.";
         throw new Error(message)
     }
 }
