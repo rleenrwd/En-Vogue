@@ -10,3 +10,13 @@ export async function login(data) {
         throw new Error(message);
     }
 }
+
+export async function getMe() {
+    try {
+        const response = await axios.get("/auth/me");
+        return response.data;
+    } catch (err) {
+        const message = err.response?.data?.message || "Unauthorized.";
+        throw new Error(message)
+    }
+}

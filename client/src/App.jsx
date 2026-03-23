@@ -2,6 +2,7 @@ import {Routes, Route, useLocation} from 'react-router-dom';
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
+
 // PAGES 
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
@@ -11,6 +12,7 @@ import Contact from "./pages/Contact/Contact";
 import Booking from "./pages/Booking/Booking";
 
 // ADMIN PAGES
+import ProtectedRoute from './admin/routes/ProtectedRoute';
 import Login from "./admin/pages/Login/Login";
 import Dashboard from "./admin/pages/Dashboard/Dashboard";
 
@@ -35,7 +37,9 @@ function App() {
           
           {/* ADMIN ROUTES */}
           <Route path="/admin/login" element={<Login />} />
-          <Route path="/admin/dashboard" element={<Dashboard />}  />
+          <Route element={<ProtectedRoute />}>
+            <Route path="/admin/dashboard" element={<Dashboard />}  />
+          </Route>
         </Routes>
       </main>
 
