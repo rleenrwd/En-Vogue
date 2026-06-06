@@ -12,20 +12,21 @@
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
   font-weight: 600;
+  font-family: var(--font-heading);
 }
 
 
-/* Full page centering */
+
 .login-form {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f8f9fa; /* light gray background */
+  background-color: whitesmoke; 
   padding: 1rem;
 }
 
-/* Form container (card feel) */
+
 .login-form form {
   width: 100%;
   max-width: 400px;
@@ -35,25 +36,24 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-/* Optional: space error nicely */
+
 .login-form .alert {
   max-width: 400px;
   width: 100%;
   margin-bottom: 1rem;
 }
 
-/* Inputs feel slightly nicer */
+
 .login-form .form-control {
   padding: 0.6rem 0.75rem;
 }
 
-/* Button full width + slight polish */
 .login-form button {
   width: 100%;
   margin-top: 0.5rem;
 }
 
-/* Small responsive tweak */
+
 @media (max-width: 576px) {
   .login-form form {
     padding: 1.5rem;
