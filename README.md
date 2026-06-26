@@ -1,8 +1,6 @@
 # En Vogue Grooming --- Full-Stack Web Application (V1)
 
-> **Status:** In active development (V1). This application is being
-> built as a custom replacement for an existing client website and is
-> planned for production deployment.
+> ⚠️ **Project Status:** Development on this project has been paused by the business owner. While the core backend functionality and some of the initial frontend sections are complete, deployment and further feature integration are currently deferred. The repository remains active for portfolio and architectural review.
 
 > **UI previews of completed sections are shown below**
 
